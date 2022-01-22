@@ -43,7 +43,7 @@ THEN I am prompted to select an employee to update and their new role and this i
 [Demo]()
 
 ## Contact
-Github [RogueStorm7]()
+Github [RogueStorm7](https://roguestorm7.github.io/exqusite-employee-tracker/)
 
 
 &copy; 2022 Mianta McKnight  | All rights reserved | 
