@@ -1,17 +1,26 @@
 {
   "name": "exqusite-employee-tracker",
+  "description": "This interface command program is an easy to use for people who are not developers to view and interact with information stored databases.",
   "version": "1.0.0",
-  "description": "## Description",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \\\"Error: no test specified\\\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://roguestorm7.github.io/exqusite-employee-tracker/"
+    "url": "git+https://github.com/RogueStorm7/exqusite-employee-tracker.git"
   },
   "author": "",
   "license": "ISC",
-  "keywords": []
+  "bugs": {
+    "url": "https://github.com/RogueStorm7/exqusite-employee-tracker/issues"
+  },
+  "homepage": "https://github.com/RogueStorm7/exqusite-employee-tracker#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "init": "^0.1.2",
+    "inquirer": "^8.2.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3"
+  }
 }

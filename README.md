@@ -1,21 +1,47 @@
-# exqusite-employee-tracker
+# company-dime-exquisite-employee-tracker
 
 ## Table of contents
 - [Description](#description)
 - [User Story](#user-story)
+- [About](#about)
+- [Installation](#installation)
+- [Dependencies](#dependencies)
 - [Acceptance Criteria](#acceptance-criteria)
 - [Screenshot](#screenshot)
-- [Demo Walk-through  Video](#demo-walk-through-video)
+- [Demo Walk through  Video](#demo-walk-through-video)
+- [Built with](#built-with)
 - [Contact](#contact)
 
 
 ## Description
-My goal is to build a command-line application to manage a company's employee database, using MySQL, Node.js, and Inquirer.
+My goal is to build a command-line application to manage a company's employee database, using MySQL, Node.js, and Inquirer. This is an example of Content Management.  This interface command program is an easy to use for people who are not developers to view and interact with information stored databases. 
 
 ## User Story
 AS A business owner
 I WANT to be able to view and manage the departments, roles, and employees in my company
-SO THAT I can organize and plan my business
+SO THAT I can organize and plan my business.
+
+## About
+The application is user friendly and built to handle large amount of data and uses the *Application tree structure*. This would be ideal for companies that have employees that could have several roles as a part of their job.
+
+* *View All Employees* - command prints all employees in a table. Table contains employee id, employee name, title, department, salary and employee manager.
+* View All Employees By Department - command prints all departments as well as the employees in it.
+* *View All Employees* By Manager - command prints all employee managers as well as their associates.
+* *View All Roles* - command prints all roles/title as well as the corresponding employee.
+* *Add An Employee* - command line adds a new entry to the database.
+* *Remove An Employee* - command line deletes an employee from the database
+* *Update Employee Role* - command line updates the role/title of an employee.
+
+## Installation
+* **npm i** - to install all file in order for npm to work
+* **npm i inquirer** - to use inquirer (to interact with the user via command line)
+* **npm init** - to create a **json** file
+* **npm i mysql** - to connect to MySql database
+* **npm i console.table** -npm console.table - to format tables
+* You now can navigate to the root directory in your terminal and launch the app; at this point you have successfully launched the application, next follow the prompt instructions to use the application.
+
+## Dependencies
+![screenshot](image/dep.PNG)
 
 ## Acceptance Criteria
 GIVEN a command-line application that accepts user input
@@ -36,11 +62,22 @@ THEN I am prompted to enter the employee’s first name, last name, role, and ma
 WHEN I choose to update an employee role
 THEN I am prompted to select an employee to update and their new role and this information is updated in the database
 
-# Screenshots
+# Screenshot
 [screenshot]()
 
 ## Demo Walk-through Video:   
 [Demo]()
+
+## Built with
+* JavaScript
+* Inquirer
+* Node.js
+* MySQL
+
+## References
+* https://www.w3schools.com/sql/sql_join.asp
+* https://www.w3schools.com/js/js_switch.asp
+* https://www.npmjs.com/package/inquire
 
 ## Contact
 Github [RogueStorm7](https://roguestorm7.github.io/exqusite-employee-tracker/)
