@@ -42,7 +42,7 @@ The application is user friendly and built to handle large amount of data and us
 you have successfully launched the application, next follow the prompt instructions to use the application.
 
 ## Dependencies
-![screenshot](image/dep.PNG)
+[screenshot](image/dep.png)
 
 ## Acceptance Criteria
 GIVEN a command-line application that accepts user input
