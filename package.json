@@ -1,10 +1,11 @@
 {
-  "name": "exqusite-employee-tracker",
+  "name": "company-time-exquisite-employee-tracker",
   "description": "This interface command program is an easy to use for people who are not developers to view and interact with information stored databases.",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -18,9 +19,12 @@
   "homepage": "https://github.com/RogueStorm7/exqusite-employee-tracker#readme",
   "dependencies": {
     "console.table": "^0.10.0",
-    "init": "^0.1.2",
     "inquirer": "^8.2.0",
     "mysql": "^2.18.1",
     "mysql2": "^2.3.3"
-  }
+  },
+  "devDependencies": {
+    "jest": "^27.4.7"
+  },
+  "keywords": []
 }

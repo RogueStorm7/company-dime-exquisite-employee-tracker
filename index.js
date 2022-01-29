@@ -3,6 +3,9 @@
 const mysql = require('mysql');
 const inquirer = require('inquirer');
 require('console.table');
+let listRoles = [];
+let listEmployee = [];
+let listDepartment = [];
 
 //prompts
 const promptMessages = {
@@ -19,25 +22,30 @@ const promptMessages = {
 
 // create the connection to database
 const connection = mysql.createConnection({
-  //host  
+//host  
   host: 'localhost',
 
-  //your port
-  port: 3001,
+// Your port; if not 3306
+  port: 3306,
 
-  //username
+//username
   user: 'root',
 
-  //your password
-  password: 'password789',
-  database: 'employees'
+//your password
+  password: 'password',
+  database: 'employeeSchemaDB'
 });
 
 //simple query
-connection.connect(err => {
-  if (err) throw err;
-  prompt();
-});
+function viewQuery (queryString, queryTitle) {
+  connection.query(queryString, (err, res) => {
+    if (err) throw err;
+    console.log("\n"+queryTitle);
+    console.table(res);
+  });
+  askQuestion();
+}
+
 
 function prompt() {
   inquirer.prompt({
@@ -217,7 +225,7 @@ async function addEmployee() {
           role_id: roleId,
           manager_id: parseInt(managerId)
         },
-        (err, res) => {
+        (err) => {
           if (err) throw err;
           prompt();
 
@@ -306,7 +314,7 @@ async function updateRole() {
     }
     connection.query(`UPDATE employee 
       SET role_id = ${roleId}
-      WHERE employee.id = ${employeeId.name}`, async (err, res) => {
+      WHERE employee.id = ${employeeId.name}`, async (err) => {
       if (err) throw err;
       console.log('Role has been updated..')
       prompt();
@@ -328,3 +336,5 @@ function askName() {
     }
   ]);
 }
+
+prompt()
