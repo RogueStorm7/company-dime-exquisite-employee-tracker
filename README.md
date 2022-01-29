@@ -14,7 +14,7 @@
 
 
 ## Description
-My goal is to build a command-line application to manage a company's employee database, using MySQL, Node.js, and Inquirer. This is an example of Content Management.  This interface command program is an easy to use for people who are not developers to view and interact with information stored databases. 
+Create a command-line application to manage a company's employee database, using MySQL, Node.js, and Inquirer. This is an example of Content Management.  This interface command program is an easy to use for people who are not developers to view and interact with information stored databases. 
 
 ## User Story
 AS A business owner
@@ -38,7 +38,8 @@ The application is user friendly and built to handle large amount of data and us
 * **npm init** - to create a **json** file
 * **npm i mysql** - to connect to MySql database
 * **npm i console.table** -npm console.table - to format tables
-* You now can navigate to the root directory in your terminal and launch the app; at this point you have successfully launched the application, next follow the prompt instructions to use the application.
+* You now can navigate to the root directory in your terminal and launch the app by typing in **node index.js**; 
+you have successfully launched the application, next follow the prompt instructions to use the application.
 
 ## Dependencies
 ![screenshot](image/dep.PNG)
@@ -63,10 +64,10 @@ WHEN I choose to update an employee role
 THEN I am prompted to select an employee to update and their new role and this information is updated in the database
 
 # Screenshot
-[screenshot]()
+[screenshot](./image/screenshot-mysql.png)
 
 ## Demo Walk-through Video:   
-[Demo]()
+[Demo](https://drive.google.com/file/d/1czdCsJm0fMTz8aHddgeigJ42Rk7RQDvN/view?usp=sharing)
 
 ## Built with
 * JavaScript
@@ -80,7 +81,7 @@ THEN I am prompted to select an employee to update and their new role and this i
 * https://www.npmjs.com/package/inquire
 
 ## Contact
-Github [RogueStorm7](https://roguestorm7.github.io/exqusite-employee-tracker/)
+Github [RogueStorm7](https://roguestorm7.github.io/company-dime-exquisite-employee-tracker/)
 
 
 &copy; 2022 Mianta McKnight  | All rights reserved | 
